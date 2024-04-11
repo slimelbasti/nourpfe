@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+.sidebarWrapper{
+  border: solid 1px red;
+  width:100px;
+  height:100vh;
+}
+.topBarWrapper{
+border: solid 1px blue;
+}
