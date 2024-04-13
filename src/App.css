@@ -219,3 +219,195 @@ body{
   .produit-item {
   color: inherit;
   }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .board {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+  
+    background-position: center;
+    background-size: cover;
+ 
+      background: linear-gradient(#3eb9de, #3a80de);
+      background: linear-gradient(#3a80de, #3eb9de);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    
+  }
+  
+  /* ---- FORM ---- */
+  #todo-form {
+    padding: 32px 32px 0;
+  }
+  
+  #todo-form input {
+    padding: 12px;
+    margin-right: 12px;
+    width: 225px;
+  
+    border-radius: 4px;
+    border: none;
+  
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: white;
+  
+    font-size: 14px;
+    outline: none;
+  }
+  
+  #todo-form button {
+    padding: 12px 32px;
+  
+    border-radius: 4px;
+    border: none;
+  
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+    color: black;
+  
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* ---- BOARD ---- */
+  .lanes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 16px;
+  
+    padding: 24px 32px;
+  
+    overflow: scroll;
+    height: 100%;
+  }
+  
+  .heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .swim-lane {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  
+    background: #f4f4f4;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  
+    padding: 12px;
+    border-radius: 4px;
+    width: 225px;
+    min-height: 120px;
+  
+    flex-shrink: 0;
+  }
+  
+  .task {
+    background: white;
+    color: black;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  
+    padding: 12px;
+    border-radius: 4px;
+  
+    font-size: 16px;
+    cursor: move;
+  }
+  
+  .is-dragging {
+    scale: 1.05;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background: rgb(50, 50, 50);
+    color: white;
+  }
+  /***********/
+  .board {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+    padding: 15px 5px 0 5px;
+    margin: 10px;
+    background-color: white;
+    cursor: grab;
+  }
+  
+  .card__field {
+    border: none;
+    box-shadow: none;
+    overflow-y: hidden;
+    padding: 0;
+    width: 92%;
+    overflow-wrap: break-word;
+    resize: none;
+    outline: none;
+    font-size: 1em;
+    margin: 6px 10px 10px 10px;
+  }
+  
+  .column {
+    width: 28%;
+    margin: 25px;
+    background-color: #e5eff5;
+    border-radius: 3px;
+    height: 0%;
+  }
+  
+  .column__add-card {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.09375rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    margin: 3px;
+  }
+  
+  .column__header {
+    padding: 12px;
+    margin-top: 0;
+    cursor: default;
+  }
+  
+  .dark {
+    color: #ffffff;
+    background-color: #6f6f6f;
+  }
+  
+  .teal {
+    color: #ffffff;
+    background-color: #d1caa1;
+  }
+  
+  .darkgreen {
+    color: #ffffff;
+    background-color: #d4d6b9;
+  }
+  
+  .orange {
+    color: #ffffff;
+    background-color: "#6717e";
+  }
+  
+  svg[class*="fa-caret"] {
+    cursor: pointer;
+  }
+  
+  span[class*="Nav"] {
+    color: lightgray;
+  }
