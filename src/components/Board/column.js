@@ -55,7 +55,7 @@ class Column extends Component {
           );
         })}
         <button
-          className={"column__add-card"}
+          className={"btn btn-primary"}
           onClick={() => {
             this.props.onClick();
             setTimeout(() => {
