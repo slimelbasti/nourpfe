@@ -4,7 +4,14 @@ function Menu(props){
 return (
     <div className="menuWrapper">  
         <div className="navigation">
+        
         <ul>
+            <li>
+            <a href="/">
+        <span className="icon"><ion-icon name="bar-chart-outline"></ion-icon></span>
+                    <span className="title">Tracker</span>
+                </a>
+                </li>  
             {
                 content.map((menuItems, index) => {
                     return (

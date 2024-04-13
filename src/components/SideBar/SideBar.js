@@ -1,19 +1,13 @@
 import Menu from "../Menu/Menu";
+import Projects from "./Projects/Projects";
 
 function SideBar(props){
   const {content} = props;
 console.log(content)
 return (
-  <div className="sidebarWrapper">
-     <div className="container">
-                     <a href="#">
-                    <span className="icon"><ion-icon name="bar-chart-outline"></ion-icon></span>
-                    <span className="title">Tracker</span>
-                </a>
+  <div className="sidebarWrapper">            
     <Menu content={content}/>
-    </div> 
-  
- 
+    <Projects />
   </div>
 )
 }
